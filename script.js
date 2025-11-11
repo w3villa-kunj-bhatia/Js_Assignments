@@ -1,4 +1,4 @@
-let msg = "This is an Alert Message";
+let msg = "Welcome to JavaScript";
 alert(msg);
 
 console.log("JavaScript Loaded");
