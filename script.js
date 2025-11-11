@@ -103,6 +103,13 @@ console.log(p / q);
 console.log(p * q);
 console.log(p % q);
 
+if(p != q){
+    console.log("P is not equal to Q");
+}
+else {
+    console.log("P is equal to Q");
+}
+
 //Comparison
 
 console.log("Is 5 == 5");
@@ -123,23 +130,23 @@ if (age >= 13 && age <= 19) {
 
 //Simple Calculator
 
-let number1 = parseFloat(prompt("Enter the first number : "));
-let operator = prompt("Enter an operator (+, -, *, /) : ");
-let number2 = parseFloat(prompt("Enter the second number : "));
+// let number1 = parseFloat(prompt("Enter the first number : "));
+// let operator = prompt("Enter an operator (+, -, *, /) : ");
+// let number2 = parseFloat(prompt("Enter the second number : "));
 
-let calcResult;
+// let calcResult;
 
-if (operator === "+") {
-  result = number1 + number2;
-} else if (operator === "-") {
-  result = number1 + number2;
-} else if (operator === "*") {
-  result = number1 + number2;
-} else if (operator === "/") {
-  result = number1 + number2;
-} else {
-  result = "Invalid Input";
-}
+// if (operator === "+") {
+//   result = number1 + number2;
+// } else if (operator === "-") {
+//   result = number1 + number2;
+// } else if (operator === "*") {
+//   result = number1 + number2;
+// } else if (operator === "/") {
+//   result = number1 + number2;
+// } else {
+//   result = "Invalid Input";
+// }
 
-console.log(result);
-alert("Result Is - " + result);
+// console.log(result);
+// alert("Result Is - " + result);
