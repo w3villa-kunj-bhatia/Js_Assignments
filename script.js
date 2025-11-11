@@ -103,11 +103,10 @@ console.log(p / q);
 console.log(p * q);
 console.log(p % q);
 
-if(p != q){
-    console.log("P is not equal to Q");
-}
-else {
-    console.log("P is equal to Q");
+if (p != q) {
+  console.log("P is not equal to Q");
+} else {
+  console.log("P is equal to Q");
 }
 
 //Comparison
