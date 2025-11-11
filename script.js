@@ -36,7 +36,7 @@ console.log(typeof male);
 let nulldt = null;
 console.log(typeof nulldt);
 
-//Key value pairs
+//Key value pairs / Object
 const car = {
   brand: "Ferrari",
   model: "SF90",
@@ -128,25 +128,30 @@ if (age >= 13 && age <= 19) {
   document.write("<br>You're not a child");
 }
 
-//Simple Calculator
+//Array
 
-// let number1 = parseFloat(prompt("Enter the first number : "));
-// let operator = prompt("Enter an operator (+, -, *, /) : ");
-// let number2 = parseFloat(prompt("Enter the second number : "));
+const games = ["NFS", "CSGO", "RDR2"];
+console.log(games);
 
-// let calcResult;
+Simple Calculator
 
-// if (operator === "+") {
-//   result = number1 + number2;
-// } else if (operator === "-") {
-//   result = number1 + number2;
-// } else if (operator === "*") {
-//   result = number1 + number2;
-// } else if (operator === "/") {
-//   result = number1 + number2;
-// } else {
-//   result = "Invalid Input";
-// }
+let number1 = parseFloat(prompt("Enter the first number : "));
+let operator = prompt("Enter an operator (+, -, *, /) : ");
+let number2 = parseFloat(prompt("Enter the second number : "));
 
-// console.log(result);
-// alert("Result Is - " + result);
+let calcResult;
+
+if (operator === "+") {
+  result = number1 + number2;
+} else if (operator === "-") {
+  result = number1 + number2;
+} else if (operator === "*") {
+  result = number1 + number2;
+} else if (operator === "/") {
+  result = number1 + number2;
+} else {
+  result = "Invalid Input";
+}
+
+console.log(result);
+alert("Result Is - " + result);
