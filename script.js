@@ -120,3 +120,26 @@ if (age >= 13 && age <= 19) {
 } else {
   document.write("<br>You're not a child");
 }
+
+//Simple Calculator
+
+let number1 = parseFloat(prompt("Enter the first number : "));
+let operator = prompt("Enter an operator (+, -, *, /) : ");
+let number2 = parseFloat(prompt("Enter the second number : "));
+
+let calcResult;
+
+if (operator === "+") {
+  result = number1 + number2;
+} else if (operator === "-") {
+  result = number1 + number2;
+} else if (operator === "*") {
+  result = number1 + number2;
+} else if (operator === "/") {
+  result = number1 + number2;
+} else {
+  result = "Invalid Input";
+}
+
+console.log(result);
+alert("Result Is - " + result);
