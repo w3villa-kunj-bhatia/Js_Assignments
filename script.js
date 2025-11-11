@@ -133,7 +133,7 @@ if (age >= 13 && age <= 19) {
 const games = ["NFS", "CSGO", "RDR2"];
 console.log(games);
 
-Simple Calculator
+//Simple Calculator
 
 let number1 = parseFloat(prompt("Enter the first number : "));
 let operator = prompt("Enter an operator (+, -, *, /) : ");
