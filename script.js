@@ -144,11 +144,11 @@ let calcResult;
 if (operator === "+") {
   result = number1 + number2;
 } else if (operator === "-") {
-  result = number1 + number2;
+  result = number1 - number2;
 } else if (operator === "*") {
-  result = number1 + number2;
+  result = number1 * number2;
 } else if (operator === "/") {
-  result = number1 + number2;
+  result = number1 / number2;
 } else {
   result = "Invalid Input";
 }
