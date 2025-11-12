@@ -224,10 +224,10 @@ function add(a, b) {
 }
 console.log("Addition Function Result " + add(14, 36));
 
-const addition = (a,b) => a+b;
-  console.log("Arrow Function Result " + addition(15, 34));
+const addition = (a, b) => a + b;
+console.log("Arrow Function Result " + addition(15, 34));
 
-let cars = ["Ferrari", "BMW", "Jaguar", "Aston Martin"];
+let cars = ["Ferrari", "BMW", "Cadillac", "Aston Martin"];
 for (let car of cars) {
   console.log(cars);
 }
@@ -236,17 +236,64 @@ cars.forEach(function (car) {
   console.log(car);
 });
 
+console.log(cars.toString());
+
 //Closure
 
 function outer() {
   let name = "Kunj";
 
   function inner() {
-    console.log("Hello " + name); 
+    console.log("Hello " + name);
   }
 
   return inner;
 }
 
 const greet = outer();
-greet(); 
+greet();
+
+// Arrays
+
+//Basic operations
+
+const arr = [10, 20, 30, 40];
+
+console.log(arr[0]);
+
+console.log(arr.length);
+
+arr.push(50);
+
+console.log(arr);
+
+arr.pop();
+
+console.log(arr);
+
+arr.unshift(0);
+
+console.log(arr);
+
+arr.shift();
+
+console.log(arr);
+
+console.log("Does above array include 20? " + arr.includes(20));
+
+//map() to multiply all values in an array by 2.
+console.log(arr.map((arr) => arr * 2));
+
+//filter() to get even numbers from an array.
+let arr1 = [23, 42, 18, 71, 67];
+
+console.log(arr1.filter((arr) => arr % 2 == 0));
+
+console.log(arr[arr1.length - 1]);
+
+arr1[0] = 24;
+
+console.log(arr1);
+
+//Strings 
+
