@@ -295,5 +295,25 @@ arr1[0] = 24;
 
 console.log(arr1);
 
-//Strings 
+//Strings
 
+//Extract a substring from a full name.
+
+let s1 = "Kunj Bhatia";
+let s2 = s1.slice(0, 4);
+
+console.log(s2);
+
+//Replace a word in a sentence and log the result.
+
+let sentence = "Aston Martin DB7 was used in a war movie";
+
+let part = sentence.replace("war", "bond");
+
+console.log(part);
+
+//Using template literals to construct a greeting message.
+let username = "Crow";
+let sentence2 = `Hello ${username}, welcome to W3villa`; //this is backtick not single quote
+
+console.log(sentence2);
