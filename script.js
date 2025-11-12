@@ -134,23 +134,119 @@ console.log(games);
 
 //Simple Calculator
 
-let number1 = parseFloat(prompt("Enter the first number : "));
-let operator = prompt("Enter an operator (+, -, *, /) : ");
-let number2 = parseFloat(prompt("Enter the second number : "));
+// let number1 = parseFloat(prompt("Enter the first number : "));
+// let operator = prompt("Enter an operator (+, -, *, /) : ");
+// let number2 = parseFloat(prompt("Enter the second number : "));
 
-let calcResult;
+// let calcResult;
 
-if (operator === "+") {
-  result = number1 + number2;
-} else if (operator === "-") {
-  result = number1 - number2;
-} else if (operator === "*") {
-  result = number1 * number2;
-} else if (operator === "/") {
-  result = number1 / number2;
+// if (operator === "+") {
+//   result = number1 + number2;
+// } else if (operator === "-") {
+//   result = number1 - number2;
+// } else if (operator === "*") {
+//   result = number1 * number2;
+// } else if (operator === "/") {
+//   result = number1 / number2;
+// } else {
+//   result = "Invalid Input";
+// }
+
+// console.log(result);
+// alert("Result Is - " + result);
+
+//Control Structures
+
+//Create a program that checks if a number is positive, negative, or zero
+
+let num = -15;
+
+if (num < 0) {
+  console.log("Number is negative");
+} else if (num == 0) {
+  console.log("Number is zero");
 } else {
-  result = "Invalid Input";
+  console.log("Number is positive");
 }
 
-console.log(result);
-alert("Result Is - " + result);
+//Print numbers from 1 to 10 using different loops.
+
+console.log("For Loop");
+for (let index = 1; index <= 10; index++) {
+  console.log(index);
+}
+
+console.log("While Loop");
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+
+console.log("Do-While Loop");
+let n = 1;
+
+do {
+  console.log(n);
+  n++;
+} while (n <= 10);
+
+//Use switch to log the day of the week based on a number.
+
+let day = 4;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+}
+
+function add(a, b) {
+  return a + b;
+}
+console.log("Addition Function Result " + add(14, 36));
+
+const addition = (a,b) => a+b;
+  console.log("Arrow Function Result " + addition(15, 34));
+
+let cars = ["Ferrari", "BMW", "Jaguar", "Aston Martin"];
+for (let car of cars) {
+  console.log(cars);
+}
+
+cars.forEach(function (car) {
+  console.log(car);
+});
+
+//Closure
+
+function outer() {
+  let name = "Kunj";
+
+  function inner() {
+    console.log("Hello " + name); 
+  }
+
+  return inner;
+}
+
+const greet = outer();
+greet(); 
